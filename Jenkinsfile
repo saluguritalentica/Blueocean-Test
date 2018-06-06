@@ -5,7 +5,7 @@ pipeline {
       steps {
         sh '''chmod 777 ./jenkins/test.sh
 ./jenkins/test.sh'''
-        sh '''chmod 055 ./jenkins/stopaerospikeservice.sh
+        sh '''chmod 777 ./jenkins/startaerospikeservice.sh
 
 '''
       }
