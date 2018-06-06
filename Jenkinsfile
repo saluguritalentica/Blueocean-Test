@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'mkdir sampath_test06'
+        sh '''chmod 777 ./jenkins/test.sh
+./jenkins/test.sh'''
       }
     }
   }
