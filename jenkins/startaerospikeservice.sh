@@ -1,0 +1,1 @@
+service aerospike start
