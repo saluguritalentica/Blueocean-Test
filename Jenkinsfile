@@ -1,13 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('Build') {
+    stage('Buid') {
       steps {
-        sh '''chmod 777 ./jenkins/test.sh
-./jenkins/test.sh'''
-        sh '''chmod 777 ./jenkins/startaerospikeservice.sh
-
-'''
+        sh 'npm install'
       }
     }
   }
