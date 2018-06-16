@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Buid') {
       steps {
-        sh 'npm install'
+        sh 'yum -f install npm install'
       }
     }
   }
