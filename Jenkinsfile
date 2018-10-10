@@ -3,7 +3,9 @@ pipeline {
   stages {
     stage('Buid') {
       steps {
-        sh 'yum install npm'
+        sh '''chmod 755 ./jenkins/test.sh
+
+./jenkins/test.sh'''
       }
     }
   }
