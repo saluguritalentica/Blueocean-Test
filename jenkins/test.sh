@@ -1,2 +1,2 @@
 mkdir sampath_test
-date > time.txt
+date >> time.txt
