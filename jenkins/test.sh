@@ -1,2 +1,2 @@
 mkdir sampath_test
-service httpd stop
+sudo service httpd stop
