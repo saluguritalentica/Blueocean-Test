@@ -5,7 +5,7 @@ pipeline {
       steps {
         sh '''chmod 755 ./jenkins/test.sh
 
-bash -x ./jenkins/test.sh'''
+/jenkins/test.sh'''
       }
     }
   }
