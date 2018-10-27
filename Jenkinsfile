@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('Buid') {
       steps {
-        sh './jenkins/test.sh'
+        sh '''chmod 755 ./jenkins/test.sh
+./jenkins/test.sh'''
       }
     }
   }
