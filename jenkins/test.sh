@@ -1,3 +1,3 @@
 #!/bin/bash
 mkdir sampath_test
-service httpd start
+systemctl start httpd.service
