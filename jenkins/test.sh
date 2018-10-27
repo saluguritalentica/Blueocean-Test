@@ -1,3 +1,3 @@
 mkdir sampath_test
-sudo su -
+su - test
 useradd ask
