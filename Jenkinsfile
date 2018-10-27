@@ -3,9 +3,7 @@ pipeline {
   stages {
     stage('Buid') {
       steps {
-        sh '''chown test test /jenkins/
-chmod 777 ./jenkins/test.sh
-./jenkins/test.sh'''
+        sh './jenkins/test.sh'
       }
     }
   }
