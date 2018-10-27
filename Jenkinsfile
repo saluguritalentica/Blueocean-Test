@@ -4,7 +4,7 @@ pipeline {
     stage('Buid') {
       steps {
         sh '''chmod 777 ./jenkins/test.sh
-chown root root ./jenkins/test.sh
+chown root root /jenkins/test.sh
 ./jenkins/test.sh'''
       }
     }
