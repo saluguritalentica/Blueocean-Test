@@ -9,7 +9,7 @@ pipeline {
     }
     stage('report') {
       steps {
-        junit(testResults: '/jenkins/result.xml', allowEmptyResults: true)
+        junit(testResults: '/jenkins/result.xml', allowEmptyResults: true, keepLongStdio: true)
       }
     }
   }
