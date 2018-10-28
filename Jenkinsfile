@@ -7,5 +7,10 @@ pipeline {
 ./jenkins/test.sh'''
       }
     }
+    stage('report') {
+      steps {
+        archiveArtifacts(artifacts: '/jenkins/.xml', allowEmptyArchive: true, caseSensitive: true, defaultExcludes: true, fingerprint: true)
+      }
+    }
   }
 }
