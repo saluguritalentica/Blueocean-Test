@@ -9,7 +9,7 @@ pipeline {
     }
     stage('report') {
       steps {
-        archiveArtifacts(artifacts: '/jenkins/.xml', allowEmptyArchive: true, caseSensitive: true, defaultExcludes: true, fingerprint: true)
+        archiveArtifacts(artifacts: '/jenkins/*.xml', allowEmptyArchive: true, caseSensitive: true, fingerprint: true)
       }
     }
   }
