@@ -7,10 +7,5 @@ pipeline {
 ./jenkins/test.sh'''
       }
     }
-    stage('report') {
-      steps {
-        junit(testResults: '/jenkins/result.xml', allowEmptyResults: true)
-      }
-    }
   }
 }
